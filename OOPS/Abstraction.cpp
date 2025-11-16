@@ -2,7 +2,7 @@
 using namespace std;
 class Shape {
     public:
-    virtual void draw() = 0; // PURE VIRTUAL FUNCTION OR ABSTRACT FUNCTION
+    virtual void draw() = 0;  // PURE VIRTUAL FUNCTION OR ABSTRACT FUNCTION
 };
 class Circle : public Shape {
     public:

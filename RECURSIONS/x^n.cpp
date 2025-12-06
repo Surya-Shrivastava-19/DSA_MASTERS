@@ -1,6 +1,8 @@
 // CALCULATION OF X^n BY RECURSION IN O(log n) TIME COMPLEXITY ... by Surya Shrivastava.
+
 #include <iostream>
 using namespace std;
+
 int pow(int x, int n) {
     if(n == 0) {
         return 1;
@@ -12,6 +14,7 @@ int pow(int x, int n) {
         return halfpow * halfpow;
     }
 }
+
 int main() {
     cout << pow(3, 2) << endl;
     return 0;

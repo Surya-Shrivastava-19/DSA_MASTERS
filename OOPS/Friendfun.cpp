@@ -3,7 +3,7 @@
 using namespace std;
 class A {    // A KE PAAS B KI ACCESS NAHI AAYEGI PAR B KE PASS A KI ACCESS AJAYEGI
     string secret = "RADHE RADHE";
-    friend class B;
+    friend class B;    // BECOME A FRIEND CLASS
     friend void revealSecret(A &obj);  // BECOME A FRIEND FUNCTION
 };
 class B {   // BECOMES A FRIEND CLASS OF A

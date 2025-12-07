@@ -1,3 +1,4 @@
+// FRIENDS PAIRING PROBLEM ....By Surya Shrivastava.
 #include <iostream>
 using namespace std;
 int FriendsPairing(int n) {
@@ -13,6 +14,9 @@ int FriendsPairing(int n) {
     return ans1 + ans2;
 }
 int main() {
-    cout << FriendsPairing(2);
+    int n;
+    cout << "ENTER VALUE OF N : ";
+    cin >> n;
+    cout << "TOTAL WAYS IN WHICH " << n << " FRIENDS CAN BE PAIRED UP : " << FriendsPairing(n);
     return 0;
 }

@@ -15,27 +15,34 @@ void Merge(vector<int>& vec, int stidx, int endidx, int mid) {
             j ++ ;
         }
     }
+
     while(i <= mid) {
         temp.push_back(vec[i]);
         i ++ ;
     }
+
     while(j <= endidx) {
         temp.push_back(vec[j]);
         j ++ ;
     }
+
     for (int idx = stidx , x = 0 ; idx <= endidx; idx ++ , x ++) {
         vec[idx] = temp[x];
     }
 }
+
 void print_vec(vector<int>& vec, int n) {
     for (int i = 0; i < n; i ++) {
         cout << vec[i] << " ";
     }
 }
+
 void MergeSort(vector<int>& vec, int stidx, int endidx) {
+
     if (stidx >= endidx) {
         return;
     }
+
     int mid = (stidx + endidx) / 2;
     // mid = stidx + (endidx - stidx)/2;
 
@@ -47,6 +54,7 @@ void MergeSort(vector<int>& vec, int stidx, int endidx) {
 
     // Combine left & right
     Merge(vec, stidx, endidx, mid);
+
 }
 int main() {
     int n;

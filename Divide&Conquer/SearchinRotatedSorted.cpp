@@ -18,19 +18,19 @@ int Searchin_RSA(vector<int> vec, int stidx, int endidx, int target) {
         // Mid lie in Line 1
         if (vec[stidx] <= target && target <= vec[mid]) {
             // Call left half
-            Searchin_RSA(vec, stidx, mid - 1, target);
+            return Searchin_RSA(vec, stidx, mid - 1, target);
         }else {
             // Call right half
-            Searchin_RSA(vec, mid + 1, endidx, target);
+            return Searchin_RSA(vec, mid + 1, endidx, target);
         }
     }else {
         // Mid lie in Line 2
         if (vec[mid] <= target && target <= vec[endidx]) {
             // Call right half
-            Searchin_RSA(vec, mid + 1, endidx, target);
+            return Searchin_RSA(vec, mid + 1, endidx, target);
         }else {
             // Call left half
-            Searchin_RSA(vec, stidx, mid - 1, target);
+            return Searchin_RSA(vec, stidx, mid - 1, target);
         }
     }
 }

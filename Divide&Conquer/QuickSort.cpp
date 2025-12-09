@@ -1,4 +1,4 @@
-
+// DIVIDE & CONQUER (Quick SORT) ....By Surya Shrivastava.
 // SPACE COMPLEXITY : O(1)
 // AVERAGE CASE TIME COMPLEXITY : O(nlogn)
 // WORST CASE TIME COMPLEXITY : O(n^2)

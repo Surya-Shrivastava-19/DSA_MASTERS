@@ -9,28 +9,35 @@ int Searchin_RSA(vector<int> vec, int stidx, int endidx, int target) {
         cout << "ELEMENT NOT OCCURS IN THIS VECTOR" << "\n";
         return -1;
     }
+    
     // int mid = (stidx + endidx) / 2;
     int mid = stidx + (endidx - stidx) / 2;
+
     if (vec[mid] == target) {
         return mid;
     }
+
     if (vec[stidx] <= vec[mid]) {
         // Mid lie in Line 1
         if (vec[stidx] <= target && target <= vec[mid]) {
             // Call left half
             return Searchin_RSA(vec, stidx, mid - 1, target);
+
         }else {
             // Call right half
             return Searchin_RSA(vec, mid + 1, endidx, target);
+
         }
     }else {
         // Mid lie in Line 2
         if (vec[mid] <= target && target <= vec[endidx]) {
             // Call right half
             return Searchin_RSA(vec, mid + 1, endidx, target);
+
         }else {
             // Call left half
             return Searchin_RSA(vec, stidx, mid - 1, target);
+
         }
     }
 }

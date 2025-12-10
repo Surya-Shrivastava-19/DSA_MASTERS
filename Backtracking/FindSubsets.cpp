@@ -8,8 +8,10 @@ void StringSubset(string str, string subset) {
         return;
     }
     char ch = str[0];
+
     // yes choice
     StringSubset(str.substr(1, str.size() - 1), subset + ch); 
+
     // No choice
     StringSubset(str.substr(1, str.size() - 1), subset);
 }
@@ -18,5 +20,7 @@ int main() {
     cout << "ENTER A STRING : ";
     cin >> str;
     string subset = "";
+    cout << "ALL SUBSETS ARE : " << "\n";
     StringSubset(str, subset);
+    return 0;
 }

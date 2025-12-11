@@ -20,7 +20,7 @@ int main() {
     cout << "ENTER A STRING : ";
     cin >> str;
     string subset = "";
-    cout << "ALL SUBSETS ARE : " << "\n";
+    6cout << "ALL SUBSETS ARE : " << "\n";
     StringSubset(str, subset);
     return 0;
 }

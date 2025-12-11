@@ -1,4 +1,4 @@
-// PUSH FRONT IN DUBBLY LINKED LIST ...surya shrivastava
+// PUSH FRONT IN DUBBLY LINKED LIST ....surya shrivastava
 #include <iostream>
 using namespace std;
 class Node {

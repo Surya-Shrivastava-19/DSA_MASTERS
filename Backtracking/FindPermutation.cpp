@@ -1,9 +1,17 @@
+// FIND AND PRINT ALL PERMUTATION(ARRANGEMENT) OF A GIVEN STRING ....By Surya Shrivastava
 #include <iostream>
+#include <string>
 using namespace std;
 void Permutation(string str, string ans) {
-    n = str.size();
-    for (i = 0; i < n; i++) {
-        
+    int n = str.size();
+    if (str.size() == 0) {
+        cout << ans << "\n";
+        return;
+    }
+    for (int i = 0; i < n; i++) {
+        char ch = str[i];
+        string Nextstr = str.substr(0, i) + str.substr(i + 1, n - i - 1);
+        Permutation(Nextstr , ans + ch);
     }
     // "abcdefgh" , i=2 (delete c) => str.substr(0 , i(length)) + str.substr(i+1, n-i-1);
 }
@@ -13,6 +21,7 @@ void FindPermutation(string str) {
         f = f * i;
     }
     cout << "THEIR ARE " << f << " PERMUTATIONS ARE POSSIBLES IN THIS STRING." << "\n";
+    return;
 }
 int main() {
     string str;

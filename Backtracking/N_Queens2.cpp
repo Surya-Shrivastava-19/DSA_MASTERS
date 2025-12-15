@@ -1,4 +1,6 @@
-
+// N_QUEENS PROBLEM ....By Surya Shrivastava
+// TIME COMPLEXITY : O(n!)
+// SPACE COMPLEXITY : O(n x n)
 #include <iostream>
 #include <vector>
 #include <string>

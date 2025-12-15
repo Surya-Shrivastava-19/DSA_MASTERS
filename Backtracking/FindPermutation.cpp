@@ -1,4 +1,6 @@
 // FIND AND PRINT ALL PERMUTATION(ARRANGEMENT) OF A GIVEN STRING ....By Surya Shrivastava
+// TIME COMPLEXITY : O(n!)
+// SPACE COMPLEXITY : O(n)
 #include <iostream>
 #include <string>
 using namespace std;
@@ -30,4 +32,5 @@ int main() {
     string ans = "";
     FindPermutation(str);
     Permutation(str, ans);
+    return 0;
 }

@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-void printArray(vector<int>& vec, int n) {14
+void printArray(vector<int>& vec, int n) {
     for (int i=0; i<n; i++) {
         cout << vec[i] << " ";
     }

@@ -21,6 +21,7 @@ int Grid_Ways(int rows, int cols, int n, int m) {
 
     return (val1 + val2);
 }
+
 int main() {
     int N, M;
     cout << "ENTER SIZE OF N X M MATRIX :- " << "\n";

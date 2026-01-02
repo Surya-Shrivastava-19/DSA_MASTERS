@@ -74,6 +74,17 @@ void Count_Nodes(BST *p) {
     }
 }
 
+int count_leaves(BST *p) {
+    if(p != NULL) {
+       int count = 0;
+       if(p -> left == NULL && p -> right == NULL) {
+          count = 1;
+       }  
+       return count + count_leaves(p -> left) + count_leaves(p -> right);
+    }
+    return -1;
+}
+
 int main() {
     init();
     create_root(50);

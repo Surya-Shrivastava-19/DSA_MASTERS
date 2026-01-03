@@ -43,6 +43,7 @@ int main() {
     S1.Push('R');
     S1.Push('U');
     S1.Push('S');
+    cout << "Top : "<< S1.Top() << "\n";
     while (S1.isEmpty() == false) {
         cout << S1.Top() << " ";
         S1.Pop();

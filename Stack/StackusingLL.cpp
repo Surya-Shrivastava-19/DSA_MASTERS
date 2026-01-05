@@ -1,3 +1,4 @@
+// STACK USING LINKED LIST IN STL ...BY SURYA SHRIVASTAVA.
 #include <iostream>
 #include <list>
 #include <iterator>
@@ -43,9 +44,11 @@ int main() {
     S1.Push(500);
     S1.Push(600);
     S1.Push(700);
+    cout << "LIST : " << "\n";
     while(S1.isEmpty() != true) {
         cout << (S1.Top()) << " --> ";
         S1.Pop();
     }
     cout << "NULL" << "\n";
+    return 0;
 }

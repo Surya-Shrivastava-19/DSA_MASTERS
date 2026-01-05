@@ -8,6 +8,7 @@ int linearsearch(int size, int arr[], int target){
      }
      return -1 ;
 }
+
 int main(){
     int size=5,arr[size],target;
     cout << "enter elements of array : ";

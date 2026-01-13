@@ -11,25 +11,26 @@ class Student {
 
     public:
     // SETTER
-    void setName(string NameValue){
+    void setName(string NameValue, float cgpaValue){
         Name = NameValue;
-    }
-    void setcgpa(float cgpaValue){
         cgpa = cgpaValue;
     }
+    // void setcgpa(float cgpaValue){
+    //     cgpa = cgpaValue;
+    // }
 
     // GETTER
     string getName(){
         return Name;
     }
-    float getCgpa(){
+    float getCgpa() {
         return cgpa;
     }
 };
 int main(){
     Student s1;
-    s1.setName("SURYA SHRIVASTAVA");
-    s1.setcgpa(8.07);
+    s1.setName("SURYA SHRIVASTAVA", 8.07);
+    // s1.setcgpa(8.07);
     cout << s1.getName() <<"\n";
     cout << s1.getCgpa() <<"\n";
     return 0;

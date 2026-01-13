@@ -2,9 +2,9 @@
 #include <string>
 using namespace std;
 class Car {
-    public:
     string Name;
     string Color;
+    public:
     Car(string Name, string Color){
         this->Name = Name;     // SETTER
         this->Color = Color; 
@@ -15,12 +15,12 @@ class Car {
     string getColor(){   // GETTER
         return Color;
     }
-    // CUSTOM COPY CONSTRUCTOR
-    // Car(Car &original){
-    //     cout << "COPY CONSTRUCTOR..." << "\n";
-    //     Name = original.Name;
-    //     Color = original.Color;
-    // }
+    //CUSTOM COPY CONSTRUCTOR
+    Car(Car &original){
+        cout << "COPY CONSTRUCTOR..." << "\n";
+        Name = original.Name;
+        Color = original.Color;
+    }
 };
 int main(){
     Car c1("BMW 1000000", "DARK BLUE");

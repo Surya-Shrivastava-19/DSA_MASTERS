@@ -17,5 +17,7 @@ int main() {
     counter2();
     counter2();
     counter2();
+    counter2();
+    counter2();
     return 0;
 }

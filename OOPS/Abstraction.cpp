@@ -18,8 +18,8 @@ class Square : public Shape {
 };
 int main() {
     Circle c1;
-    Shape *s = new Square;
-    Shape *c = new Circle;
+    // Shape *s = new Square;
+    // Shape *c = new Circle;
     c1.draw();
     Square s1;
     s1.draw();

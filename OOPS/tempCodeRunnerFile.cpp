@@ -1,6 +1,2 @@
-Car(Car &original){
-    //     cout << "COPY CONSTRUCTOR..." << "\n";
-    //     name = original.name;
-    //     color = original.color;
-    //     milage = original.milage;
-    // }
+Shape *s = new Square;
+    // Shape *c = new Circle;

@@ -17,7 +17,7 @@ class TA : public Teacher, public Student {
 };
 int main(){
     TA t1;
-    t1.name = "SAILESH SIR...";
+    t1.name = "MR SAILESH SIR...";
     t1.salary = 55000;
     t1.subject = "JAVA...";
     t1.roll_No = 2488500;

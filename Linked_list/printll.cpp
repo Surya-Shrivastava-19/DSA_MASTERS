@@ -38,6 +38,10 @@ class List {
         }
     }
     void printList() {
+        if(head == NULL) {
+            cout << "LIST IS EMPTY ..." << endl;
+            return;
+        }
         Node* temp = head;
         while(temp != NULL) {
             cout << temp -> data << "->";

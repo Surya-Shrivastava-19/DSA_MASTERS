@@ -61,7 +61,20 @@ void DeleteAtHead() {
 void DeleteAttail() {
     if (head == NULL) {
         return;
-    }else if (head = tail) {}
+    }else if (head == tail) {
+        delete tail;
+        head = tail = NULL;
+    }else {
+        Node* temp = head;
+        while (temp -> next != tail) {
+            temp = temp -> next;
+        }
+        tail = temp;
+        temp = temp -> next;
+        tail -> next = head;
+        temp -> next = NULL;
+        delete temp;
+    }
 }
 
 void PrintCircularLL() {
@@ -87,8 +100,9 @@ int main() {
     cll.insertAttail(500); 
     cll.insertAttail(600); 
     cll.insertAttail(700); 
-    cll.insertAttail(800); 
+    // cll.insertAttail(800); 
     cll.DeleteAtHead(); 
+    cll.DeleteAttail();
     cll.PrintCircularLL();
     return 0;
 }

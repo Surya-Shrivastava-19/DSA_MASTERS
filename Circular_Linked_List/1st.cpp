@@ -42,6 +42,28 @@ int insertAttail(int val) {
     }
 }
 
+void DeleteAtHead() {
+    if (head == NULL) {
+        return;
+    }else if (head == tail) {
+        delete head;
+        head = tail = NULL;
+    }
+    else {
+        Node* temp = head;
+        head = head -> next;
+        tail -> next = head;
+        temp -> next = NULL;
+        delete temp;
+    }
+}
+
+void DeleteAttail() {
+    if (head == NULL) {
+        return;
+    }else if (head = tail) {}
+}
+
 void PrintCircularLL() {
     if (head == NULL) {
         cout << "CIRCULAR LINKED LIST IS EMPTY";
@@ -66,6 +88,7 @@ int main() {
     cll.insertAttail(600); 
     cll.insertAttail(700); 
     cll.insertAttail(800); 
+    cll.DeleteAtHead(); 
     cll.PrintCircularLL();
     return 0;
 }

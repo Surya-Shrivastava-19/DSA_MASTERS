@@ -106,9 +106,10 @@ class List {
 
         temp = temp -> next;
 
+        tail -> next = NULL;
+        
         delete temp;
 
-        tail -> next = NULL;
     }
 };
 int main() {

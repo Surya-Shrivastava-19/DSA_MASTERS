@@ -12,7 +12,7 @@ class Student {
         cout << "Percentage: " << cgpa * 100;
     }
 };
-int main(){
+int main() {
     Student s1;
     s1.username="surya";
     s1.roll_no="0246CS241339";

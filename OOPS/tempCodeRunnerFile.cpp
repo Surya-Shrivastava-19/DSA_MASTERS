@@ -1,2 +1,3 @@
-Shape *s = new Square;
-    // Shape *c = new Circle;
+ // Car c2(c1);
+    // cout << c2.Name << "\n";
+    // cout << c2.Color << "\n";

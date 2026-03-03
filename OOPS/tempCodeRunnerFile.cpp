@@ -1,3 +1,5 @@
- // Car c2(c1);
-    // cout << c2.Name << "\n";
-    // cout << c2.Color << "\n";
+ // Car(Car &original) {
+    //     cout << "copy constructor call;" << "\n;";
+    //     name = original.name;
+    //     color = original.color;
+    // }

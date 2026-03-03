@@ -14,6 +14,11 @@ class Car {
     string getColor(){
         return color;
     }
+    Car(Car &original) {
+        cout << "copy constructor call;" << "\n;";
+        name = original.name;
+        color = original.color;
+    }
 };
 int main() {
     Car c1("Bularo", "Blue");

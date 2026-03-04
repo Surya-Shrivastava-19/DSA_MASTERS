@@ -12,7 +12,7 @@ class Maths{
         return (length*breadth);
     }
     // Area of a circle
-    T Area(T r) {
+    float Area(T r) {
         return (3.14*r*r);
     }
 };

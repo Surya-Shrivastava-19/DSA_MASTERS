@@ -4,7 +4,7 @@ template<class T>
 class Maths{
     public:
     // Area of a Triangle
-    T Area(float half, T base, T height) {
+    float Area(float half, T base, T height) {
         return (half*base*height);
     }
     // Area of a rectangle

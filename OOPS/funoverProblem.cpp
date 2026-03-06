@@ -20,6 +20,9 @@ class MAX{
 };
 int main() {
     MAX m1;
-    cout << m1.Max(2,6,1) << "\n";
+    int a, b, c;
+    cout << "ENTER VALUE OF a , b & c : ";
+    cin >> a >> b >> c;
+    cout << "MAX = " << m1.Max(a, b, c) << "\n";
     return 0;
 }

@@ -1,3 +1,4 @@
+// NEXT GREATER ELEMENT
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -30,15 +31,17 @@ int main() {
     cout << "ENTER the size of a vector : ";
     cin >> n;
     vector<int> vec(n);
+    vector<int> ans(n);
     cout << "ENTER ELEMENTS OF VECTOR : " << endl;
-    cout << "vec = [";
+    cout << "vec = ";
     for (int i=0; i<n; i++) {
         cin >> vec[i];
-        cout << " ,";
     }
-    cout << "]";
     // vector<int> vec = {6, 8, 0, 1, 3};
-    vector<int> ans ={0, 0, 0, 0, 0};
+    for(int i=0; i<n; i++) {
+        ans[i] = 0;
+    }
+    // vector<int> ans ={0, 0, 0, 0, 0};
     nextGreater(vec, ans);
     return 0;
 }

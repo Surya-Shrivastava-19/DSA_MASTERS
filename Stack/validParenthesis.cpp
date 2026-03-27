@@ -21,8 +21,8 @@ bool validParenthesis(string str) {
                     }else {
                         char top = stack.top();
                         if((top == '[' && ch == ']') ||
-                           (top == '[' && ch == ']') ||
-                           (top == '[' && ch == ']'))
+                           (top == '{' && ch == '}') ||
+                           (top == '(' && ch == ')'))
                            {
                             stack.pop();
                            }

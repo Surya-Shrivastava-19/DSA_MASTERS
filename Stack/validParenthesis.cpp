@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 using namespace std;
 bool validParenthesis(string str) {
     stack<char> stack;
@@ -17,10 +18,14 @@ bool validParenthesis(string str) {
                 {
                     if(stack.empty()) {
                         return false;
-                    }else if (stack.top() == ch) {
-                        stack.pop();
-                    }else{
-                        return false;
+                    }else {
+                        char top = stack.top();
+                        if((top == '[' && ch == ']') ||
+                           (top == '[' && ch == ']') ||
+                           (top == '[' && ch == ']'))
+                           {
+                            stack.pop();
+                           }
                     }
                 }
     }

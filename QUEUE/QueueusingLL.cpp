@@ -55,7 +55,7 @@ int main() {
     Q1.push(3);
     Q1.push(4);
     Q1.push(5);
-    while(!empty()) {
+    while(!Q1.empty()) {
         cout << Q1.front() << "\n";
         Q1.pop();
     }

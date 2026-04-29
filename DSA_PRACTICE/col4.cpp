@@ -11,7 +11,13 @@ int maxSum(int arr[]) {
 }
 int main() {
     int n;
-    int arr[5] = {1,2,3,4,5};
+    cout << "ENTER SIZE OF ARRAY: ";
+    cin >> n;
+    int arr[n];
+    cout << "ENTER ELEMENTS OF ARRAY: ";
+    for(int i=0; i<n; i++) {
+        cin >> arr[i];
+    }
     cout << "MAX: " << maxSum(arr) << "\n";
     return 0;
 }
